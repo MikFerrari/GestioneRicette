@@ -1,6 +1,6 @@
 package it.unibs.ing.fp.gestionericette;
 
-import it.unibs.fp.myExceptions.ElementExistenceException;
+import it.unibs.ing.fp.myExceptions.ElementExistenceException;
 
 public class DriverMain {
 

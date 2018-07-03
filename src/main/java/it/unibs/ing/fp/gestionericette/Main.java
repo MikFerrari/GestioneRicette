@@ -1,6 +1,6 @@
 package it.unibs.ing.fp.gestionericette;
 
-import it.unibs.fp.mylib.MyMenu;
+import it.unibs.ing.fp.mylib.MyMenu;
 
 public class Main {
 

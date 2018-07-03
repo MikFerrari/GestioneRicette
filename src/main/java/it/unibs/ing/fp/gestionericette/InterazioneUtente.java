@@ -1,9 +1,9 @@
 package it.unibs.ing.fp.gestionericette;
 
-import it.unibs.fp.mylib.InputDati;
-import it.unibs.fp.mylib.MyMenu;
+import it.unibs.ing.fp.myExceptions.ElementExistenceException;
+import it.unibs.ing.fp.mylib.InputDati;
+import it.unibs.ing.fp.mylib.MyMenu;
 import java.util.HashMap;
-import it.unibs.fp.myExceptions.ElementExistenceException;
 
 public class InterazioneUtente {
 
