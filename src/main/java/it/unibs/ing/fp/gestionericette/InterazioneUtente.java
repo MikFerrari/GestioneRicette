@@ -63,16 +63,16 @@ public class InterazioneUtente {
 	
 	public static void aggiungiIngredientiARicetta(ElencoRicette ricette, ElencoIngredienti ingredienti) {
 		//scelta della ricetta
-		MyMenu menuRicette = new MyMenu(MESS_SCELTA_RICETTA, ricette.getRicette());
+		MyMenu menuRicette = new MyMenu(MESS_SCELTA_RICETTA, ricette.getElenco());
 		int scelta1 = menuRicette.scegli();
 		
 		if(scelta1 != 0) {
 			
-			Ricetta ricetta = ricette.getRicette().get(scelta1 - 1);
+			Ricetta ricetta = ricette.getElenco().get(scelta1 - 1);
 			
 			//scelta degli ingredienti
 			boolean flag = true;
-			MyMenu menuIngredienti = new MyMenu(MESS_SCELTA_INGREDIENTE, ingredienti.getIngredienti());
+			MyMenu menuIngredienti = new MyMenu(MESS_SCELTA_INGREDIENTE, ingredienti.getElenco());
 			int scelta2 = 0;
 			double quantita = 0;
 			
@@ -80,7 +80,7 @@ public class InterazioneUtente {
 				scelta2 = menuIngredienti.scegli();
 				if(scelta2 == 0)
 					break;
-				Ingrediente scelto = ingredienti.getIngredienti().get(scelta2 - 1);
+				Ingrediente scelto = ingredienti.getElenco().get(scelta2 - 1);
 				quantita = InputDati.leggiDoubleConMinimo(MESS_QUANTITA_INGREDIENTE, 0);
 				ricetta.aggiungiComponente(scelto, quantita);
 				

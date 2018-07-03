@@ -9,8 +9,8 @@ class ElencoIngredientiTest {
 	void testAggiungiIngrediente() {
 		final ElencoIngredienti elenco = new ElencoIngredienti();
 		Ingrediente ing = new Ingrediente("pollo", 89);
-		elenco.aggiungiIngrediente(ing);
-		assertTrue(elenco.getIngredienti().contains(ing));
+		elenco.aggiungiElemento(ing);
+		assertTrue(elenco.getElenco().contains(ing));
 	}
 
 	@Test
@@ -18,7 +18,7 @@ class ElencoIngredientiTest {
 		final ElencoIngredienti elenco = new ElencoIngredienti();
 		Ingrediente ing = new Ingrediente("pasta", 33);
 		String cercato = "pasta";
-		elenco.aggiungiIngrediente(ing);
+		elenco.aggiungiElemento(ing);
 		assertTrue(elenco.giaPresente(cercato));
 	}
 
@@ -26,8 +26,8 @@ class ElencoIngredientiTest {
 	void testCercaIngrediente() {
 		final ElencoIngredienti elenco = new ElencoIngredienti();
 		String cercato = "burro";
-		elenco.aggiungiIngrediente(new Ingrediente("burro", 33));
-		assertEquals(elenco.cercaIngrediente(cercato), 0);
+		elenco.aggiungiElemento(new Ingrediente("burro", 33));
+		assertEquals(elenco.cercaElemento(cercato), 0);
 	}
 
 }

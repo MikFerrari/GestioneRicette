@@ -29,12 +29,12 @@ public class Main {
 				
 					case 1: Ingrediente nuovoIngrediente = InterazioneUtente.creaIngrediente(elencoIngredienti);
 							if(nuovoIngrediente != null)
-								elencoIngredienti.aggiungiIngrediente(nuovoIngrediente);
+								elencoIngredienti.aggiungiElemento(nuovoIngrediente);
 							break;
 							
 					case 2: Ricetta nuovaRicetta = InterazioneUtente.creaRicetta(elencoRicette);
 							if(nuovaRicetta != null)
-								elencoRicette.aggiungiRicetta(nuovaRicetta);
+								elencoRicette.aggiungiElemento(nuovaRicetta);
 							break;
 							
 					case 3: InterazioneUtente.aggiungiIngredientiARicetta(elencoRicette, elencoIngredienti); //
