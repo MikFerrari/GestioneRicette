@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Ricetta implements Comparable<Ricetta> {
 
-	private final static String FORMATO_INTESTAZIONE_RICETTA = "Nome ricetta: %s\nDescrizione: %s\nTipo di piatto: %s\nApporto calorico totale: %f\n";
-	private final static String FORMATO_ELENCO_COMPONENTI = "%s\tQuantità: %s\n";
+	private final static String FORMATO_INTESTAZIONE_RICETTA = "Nome ricetta: %s\n\tDescrizione: %s\n\tTipo di piatto: %s\n\tApporto calorico totale: %.2f\n";
+	private final static String FORMATO_ELENCO_COMPONENTI = "\t%s\t\tQuantità in ettogrammi: %.2f\n";
 	public final static String[] TIPI_RICETTA = { "PRIMO PIATTO", "SECONDO PIATTO" };
 	
 	private String nome;

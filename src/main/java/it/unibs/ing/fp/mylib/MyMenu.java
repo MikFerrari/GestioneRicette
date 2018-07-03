@@ -14,7 +14,7 @@ e sia presentata in fondo al menu
 */
 public class MyMenu
 {
-  final private static String CORNICE = "--------------------------------";
+  //final private static String CORNICE = "--------------------------------";
   final private static String VOCE_USCITA = "0\tEsci";
   final private static String RICHIESTA_INSERIMENTO = "Digita il numero dell'opzione desiderata > ";
 
@@ -73,9 +73,9 @@ public class MyMenu
 		
   public void stampaMenu ()
   {
-	System.out.println(CORNICE);
+	stampaCornice();
 	System.out.println(titolo);
-	System.out.println(CORNICE);
+	stampaCornice();
     for (int i=0; i<voci.length; i++)
 	 {
 	  System.out.println( (i+1) + "\t" + voci[i]);
@@ -103,6 +103,7 @@ public class MyMenu
   {
 	  for(int i = 0; i < titolo.length(); i++)
 		  System.out.print("-");
+	  System.out.println();
   }
   
   public void stampaMenuNoUscita ()
